@@ -8,7 +8,7 @@ function PrdctDetails() {
     useEffect(() => {
         fetch('https://dummyjson.com/products/' + params.id)
             .then(async res => await res.json())
-            .then(i => setProduct(i))
+            .then(i  => setProduct(i))
 
     }, [])
 
@@ -22,9 +22,12 @@ function PrdctDetails() {
                 :
                 <>
 
-                    <p>{product.title}</p>
-                    <p>{product.description}</p>
+                    <p>{product.title}</p> 
                     <img src={product.images[0]} alt=""/>
+                    <p>{product.description}</p>
+                    <h2>Price: $ {product.price}</h2>
+                    <h4>Discount: {product.discountPercentage}%</h4>
+
                     </>
            }
         </div>
