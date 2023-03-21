@@ -1,0 +1,28 @@
+.card{
+  border: 2px solid ;
+  border-radius: 10px;
+  width: 50em;
+  height: 50em;
+  margin: 30px;
+  padding: 30px;
+  }
+
+.card:hover{
+  background-image: linear-gradient(#bfd8f5,#144272,#062e61,#000000);
+  color:#F6F1F1;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.09);
+
+}
+
+.container{
+  background-color: #0b2531;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card img{
+  width:100%;
+  height:25em;
+  object-fit: contain;
+}
